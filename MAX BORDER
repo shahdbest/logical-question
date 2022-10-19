@@ -1,0 +1,62 @@
+    	
+    	//t= no of test cases
+    	  //n row
+    	    	//m columns
+    	    	//# black
+    	    	//. white
+    	    	
+    	    	// each of next n(row) contains m(columns) integer
+    	    
+    	    	System.out.println("Enter test cases , row ,coloumn");
+    	    	int testCases= s.nextInt();
+    	    	int row= s.nextInt();
+    	    	int columns= s.nextInt();
+    	    	
+    	    	char[][] shapes=new char[row][columns];
+    	    	
+    	    	while(testCases> 0)
+    	    	{
+    	    		
+    	    		for(int i=0;i<shapes.length;i++)
+    	    		{
+    	    		
+    	    			shapes[i]=s.next().toCharArray();
+    	    		}
+    	    		
+    	    		System.out.println("shapes");
+    	    		for(int i=0;i<shapes.length;i++)
+    	    		{
+    	    		
+    	    			for(int j=0;j<shapes[i].length;j++)
+    	        		{
+    	        			
+    	    				System.out.print(shapes[i][j]);
+    	        		}
+    	    			System.out.println();
+    	    		}
+    	    		
+    	    		System.out.println("-----------");
+    	    		
+    	    		int max=0;
+    	    		for(int i=0;i<shapes.length;i++)
+    	    		{
+    	    				
+    	    			//String[] strs=shapes[i].toString().split(".");
+    	    	
+    	    			String str=new String(shapes[i]);
+    	    			
+    	    			String[] strs=str.split("\\.");
+    	    				for(String st:strs)
+    	    				{
+    	    					System.out.println(st);
+    	    					if(st.length()> max)
+    	    						max=st.length();
+    	    				}
+    	    		}
+    	    		
+    	    		
+    	    		
+    	    		System.out.println(max);
+    	    		testCases--;
+
+    	    	}            	
