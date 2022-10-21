@@ -1,4 +1,11 @@
-String str = sc.nextLine();
+import java.util.Scanner;
+
+public class ZooProblem {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.nextLine();
 
 		int x=0;
 		int y=0;
@@ -31,4 +38,10 @@ String str = sc.nextLine();
 		System.out.println("No");
 
 		}
+
+		 
+
+		}
+	}
+
 
